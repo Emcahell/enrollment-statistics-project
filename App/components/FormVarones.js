@@ -12,7 +12,7 @@ export const FormVarones = () => {
   $inputTotalV.type = 'number';
   $inputTotalV.required = true;
   $inputTotalV.disabled = true;
-  $inputTotalV.placeholder = 'Ingresa el total de varones';
+  $inputTotalV.placeholder = 'Número total de varones';
 
   const $labelTotalV = document.createElement('label');
   $labelTotalV.classList.add('label', 'label-total-v');
@@ -24,6 +24,8 @@ export const FormVarones = () => {
   $button.type = 'button';
   $button.textContent = 'Calcular';
 
+  const $boxContPromPorTotal = document.createElement('div');
+  $boxContPromPorTotal.classList.add('prom-pro-total')
   const $promATotalV = document.createElement('p');
   $promATotalV.classList.add('prom-total-a-v');
   $promATotalV.id = 'prom-total-a-v';
@@ -59,8 +61,9 @@ export const FormVarones = () => {
   $formVarones.appendChild($labelTotalV);
   $formVarones.appendChild($inputTotalV);
   $formVarones.appendChild($button);
-  $formVarones.appendChild($promATotalV);
-  $formVarones.appendChild($porcenATotalV);
+  $formVarones.appendChild($boxContPromPorTotal);
+  $boxContPromPorTotal.appendChild($promATotalV);
+  $boxContPromPorTotal.appendChild($porcenATotalV);
 
   return $formVarones;
 }

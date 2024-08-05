@@ -5,14 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .label-dias-habiles{
   position: relative;
-  bottom: 25px;
-  left: 10px;
-  font-size: 10px;
+  bottom: 27px;
+  left: 20px;
+  font-size: 11px;
   padding: 5px;
   text-align: start;
   font-weight: 600;
@@ -20,6 +20,8 @@
 }
 
 .input-habiles{
+  width: 220px;
+  height: 25px;
   margin-left: -55px;
   border-radius: 5px 0 0 5px !important;
   margin-bottom: 0 !important;
@@ -31,10 +33,12 @@
 }
 
 .button-dias-habiles{
+  height: 37px;
   padding: 6px 10px;
   border-radius: 0 5px 5px 0;
   border: none;
   letter-spacing: .5px;
+  font-weight: 700;
   background-color: var(--green-primary);
   cursor: pointer;
 }

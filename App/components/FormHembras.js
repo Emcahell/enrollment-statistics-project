@@ -12,7 +12,7 @@ export const FormHembras = () => {
   $inputTotalH.type = 'number';
   $inputTotalH.required = true;
   $inputTotalH.disabled = true;
-  $inputTotalH.placeholder = 'Ingresa el total de hembras';
+  $inputTotalH.placeholder = 'Número total de hembras';
 
   const $labelTotalH = document.createElement('label');
   $labelTotalH.classList.add('label', 'label-total-h');
@@ -24,6 +24,8 @@ export const FormHembras = () => {
   $button.type = 'button';
   $button.textContent = 'Calcular';
 
+  const $boxContPromPorTotal = document.createElement('div');
+  $boxContPromPorTotal.classList.add('prom-pro-total')
   const $promATotalH = document.createElement('p');
   $promATotalH.classList.add('prom-total-a-h');
   $promATotalH.id = 'prom-total-a-h';
@@ -59,8 +61,9 @@ export const FormHembras = () => {
   $formHembras.appendChild($labelTotalH);
   $formHembras.appendChild($inputTotalH);
   $formHembras.appendChild($button);
-  $formHembras.appendChild($promATotalH);
-  $formHembras.appendChild($porcenATotalH);
+  $formHembras.appendChild($boxContPromPorTotal);
+  $boxContPromPorTotal.appendChild($promATotalH);
+  $boxContPromPorTotal.appendChild($porcenATotalH);
 
   return $formHembras;
 }

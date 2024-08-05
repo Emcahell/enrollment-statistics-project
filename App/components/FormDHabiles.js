@@ -8,7 +8,7 @@ export const FormDHabiles = () => {
   $inputDias.type = 'number';
   $inputDias.required = true;
   $inputDias.id = 'dias-habiles';
-  $inputDias.placeholder = 'Ingresa los dias hábiles';
+  $inputDias.placeholder = 'Número de dias hábiles';
   const $label = document.createElement('label');
   $label.classList.add('label-dias-habiles');
   $label.innerHTML = 'Dias hábiles:'
