@@ -47,7 +47,7 @@
 
 .icon-brand-x, .icon-brand-github, .icon-brand-instagram{
   width: 15px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .menu{
@@ -93,6 +93,9 @@
 }
 
 .footer-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 10px;
 }
 
@@ -102,6 +105,5 @@
 
 .boxSocialMedia{
   display: flex;
-  margin-left: 7px;
   margin-top: 7px;
 }
