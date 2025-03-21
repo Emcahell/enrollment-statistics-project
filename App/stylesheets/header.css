@@ -1,0 +1,19 @@
+.header{
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-app{
+  margin-right: 10px;
+  font-size: 27px;
+}

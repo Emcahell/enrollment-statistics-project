@@ -4,11 +4,12 @@
 }
 
 body{
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.input[type="number"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
+  background: radial-gradient(#ffffff, #f5f5f5);
+  background-repeat: no-repeat;
 }
