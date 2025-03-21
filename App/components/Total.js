@@ -3,18 +3,18 @@ export function Total() {
   $boxTotal.classList.add('box-total');
 
   const $titlePromATotal = document.createElement('p');
-  $titlePromATotal.classList.add('title-prom-total');
-  $titlePromATotal.textContent = 'Promedio total de asistencias';
+  $titlePromATotal.classList.add('total');
+  $titlePromATotal.textContent = 'Promedio total de asistencias:';
   const $promATotal = document.createElement('p');
-  $promATotal.classList.add('prom-total');
-  $promATotal.textContent = '23';
+  $promATotal.classList.add('total');
+  $promATotal.innerHTML = `<b>23</b>`;
 
   const $titlePorcenATotal = document.createElement('p');
-  $titlePorcenATotal.classList.add('title-porcen-total');
-  $titlePorcenATotal.textContent = 'Porcentaje total de asistencias';
+  $titlePorcenATotal.classList.add('total');
+  $titlePorcenATotal.textContent = 'Porcentaje total de asistencias:';
   const $porcenATotal = document.createElement('p');
-  $porcenATotal.classList.add('porcen-total');
-  $porcenATotal.textContent = '23';
+  $porcenATotal.classList.add('total');
+  $porcenATotal.innerHTML = `<b>23</b>`;
 
   $boxTotal.appendChild($titlePromATotal);
   $boxTotal.appendChild($promATotal);

@@ -21,6 +21,37 @@
     text-align: left;
 }
 
+.box-input-total{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.box-cont-inputs{
+    width: 130px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 7px;
+}
+
+.box-cont-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.result-total{
+    margin-left: 10px;
+}
+
+.input-total-a-v{
+    width: 15px;
+}
+
 .prom-total-a-v{
     margin-top: 10px;
     margin-bottom: 5px;
@@ -29,6 +60,13 @@
 .porcen-total-a-v{
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.label{
+    width: 200px;
+    font-size: 10px;
+    padding: 5px;
+    text-align: start;
 }
 
 .button-calc{

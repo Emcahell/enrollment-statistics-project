@@ -1,10 +1,11 @@
 export function SaveyDate() {
   const $saveyDate = document.createElement('div');
-  $saveyDate.classList.add('date');
+  $saveyDate.classList.add('cont-save-date');
 
   const $inputDate = document.createElement('input');
   $inputDate.classList.add('input-date');
-  $inputDate.type = 'date';
+  $inputDate.type = 'month';
+  $inputDate.name = 'monthAndYear';
 
   const $button = document.createElement('button');
   $button.classList.add('button-save');

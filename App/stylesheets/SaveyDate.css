@@ -1,0 +1,31 @@
+.cont-save-date{
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-date{
+  width: 100px;
+  padding: 5px 10px;
+  font-size: 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button-save{
+  width: 200px;
+  padding: 5px 5px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.button-save:hover{
+  background-color: #7bda7b;
+}
