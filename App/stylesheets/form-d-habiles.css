@@ -1,5 +1,24 @@
-input[type="number"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
+.form-dias-habiles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.input-habiles{
+  border-radius: 5px 0 0 5px !important;
+  margin-bottom: 0 !important;
+}
+
+.button-dias-habiles{
+  padding: 6px 10px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  letter-spacing: .5px;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.button-dias-habiles:hover{
+  background-color: #87df87;
 }

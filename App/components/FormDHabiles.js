@@ -3,7 +3,7 @@ export function FormDHabiles() {
   $formDiasHabiles.classList.add('form-dias-habiles');
 
   const $inputDias = document.createElement('input');
-  $inputDias.classList.add('input');
+  $inputDias.classList.add('input-habiles');
   $inputDias.type = 'number';
   $inputDias.placeholder = 'Ingresa los dias hábiles';
 
