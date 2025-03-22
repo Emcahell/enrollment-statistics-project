@@ -7,8 +7,11 @@ export function FormHembras() {
   $titleH.innerHTML = 'Hembras';
 
   const $inputTotalH = document.createElement('input');
+  $inputTotalH.id = 'input-total-h';
   $inputTotalH.classList.add('input-total-h');
   $inputTotalH.type = 'number';
+  $inputTotalH.required = true;
+  $inputTotalH.disabled = true;
   $inputTotalH.placeholder = 'Ingresa el total de hembras';
 
   const $labelTotalH = document.createElement('label');
@@ -38,37 +41,39 @@ export function FormHembras() {
 
   const $boxContInputs = document.createElement('div');
   $boxContInputs.classList.add('box-cont-inputs');
+  $boxContInputs.id = 'box-cont-inputs-h';
   const $boxContResult = document.createElement('div');
   $boxContResult.classList.add('box-cont-result');
-  $boxContResult.innerHTML = `=<b class='result-total'>23</b>`;
+  $boxContResult.id = 'box-cont-result-h';
+  // $boxContResult.innerHTML = `=<b class='result-total'>23</b>`;
   
-  const $inputTotalAH1 = document.createElement('input');
-  $inputTotalAH1.classList.add('input-total-a-h');
-  $inputTotalAH1.type = 'number';
-  const $inputTotalAH2 = document.createElement('input');
-  $inputTotalAH2.classList.add('input-total-a-h');
-  $inputTotalAH2.type = 'number';
-  const $inputTotalAH3 = document.createElement('input');
-  $inputTotalAH3.classList.add('input-total-a-h');
-  $inputTotalAH3.type = 'number';
-  const $inputTotalAH4 = document.createElement('input');
-  $inputTotalAH4.classList.add('input-total-a-h');
-  $inputTotalAH4.type = 'number';
-  const $inputTotalAH5 = document.createElement('input');
-  $inputTotalAH5.classList.add('input-total-a-h');
-  $inputTotalAH5.type = 'number';
-  const $inputTotalAH6 = document.createElement('input');
-  $inputTotalAH6.classList.add('input-total-a-h');
-  $inputTotalAH6.type = 'number';
+  // const $inputTotalAH1 = document.createElement('input');
+  // $inputTotalAH1.classList.add('input-total-a-h');
+  // $inputTotalAH1.type = 'number';
+  // const $inputTotalAH2 = document.createElement('input');
+  // $inputTotalAH2.classList.add('input-total-a-h');
+  // $inputTotalAH2.type = 'number';
+  // const $inputTotalAH3 = document.createElement('input');
+  // $inputTotalAH3.classList.add('input-total-a-h');
+  // $inputTotalAH3.type = 'number';
+  // const $inputTotalAH4 = document.createElement('input');
+  // $inputTotalAH4.classList.add('input-total-a-h');
+  // $inputTotalAH4.type = 'number';
+  // const $inputTotalAH5 = document.createElement('input');
+  // $inputTotalAH5.classList.add('input-total-a-h');
+  // $inputTotalAH5.type = 'number';
+  // const $inputTotalAH6 = document.createElement('input');
+  // $inputTotalAH6.classList.add('input-total-a-h');
+  // $inputTotalAH6.type = 'number';
   
   $boxInputTotalA.appendChild($boxContInputs);
   $boxInputTotalA.appendChild($boxContResult);
-  $boxContInputs.appendChild($inputTotalAH1);
-  $boxContInputs.appendChild($inputTotalAH2);
-  $boxContInputs.appendChild($inputTotalAH3);
-  $boxContInputs.appendChild($inputTotalAH4);
-  $boxContInputs.appendChild($inputTotalAH5);
-  $boxContInputs.appendChild($inputTotalAH6);
+  // $boxContInputs.appendChild($inputTotalAH1);
+  // $boxContInputs.appendChild($inputTotalAH2);
+  // $boxContInputs.appendChild($inputTotalAH3);
+  // $boxContInputs.appendChild($inputTotalAH4);
+  // $boxContInputs.appendChild($inputTotalAH5);
+  // $boxContInputs.appendChild($inputTotalAH6);
 
   $formHembras.appendChild($titleH);
   $formHembras.appendChild($labelTotalA);

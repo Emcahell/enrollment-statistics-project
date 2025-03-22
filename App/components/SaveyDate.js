@@ -6,6 +6,8 @@ export function SaveyDate() {
   $inputDate.classList.add('input-date');
   $inputDate.type = 'month';
   $inputDate.name = 'monthAndYear';
+  $inputDate.required = true;
+  $inputDate.disabled = true;
 
   const $button = document.createElement('button');
   $button.classList.add('button-save');
