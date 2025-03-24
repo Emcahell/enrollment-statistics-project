@@ -1,11 +1,22 @@
 .form-dias-habiles{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
 }
 
+.label-dias-habiles{
+  position: relative;
+  bottom: 25px;
+  left: 10px;
+  font-size: 10px;
+  padding: 5px;
+  text-align: start;
+}
+
 .input-habiles{
+  margin-left: -55px;
   border-radius: 5px 0 0 5px !important;
   margin-bottom: 0 !important;
 }

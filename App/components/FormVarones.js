@@ -20,16 +20,19 @@ export function FormVarones() {
 
   const $button = document.createElement('button');
   $button.classList.add('button-calc');
+  $button.id = 'button-v';
   $button.type = 'button';
   $button.textContent = 'Calcular';
 
   const $promATotalV = document.createElement('p');
   $promATotalV.classList.add('prom-total-a-v');
-  $promATotalV.innerHTML = `Promedio de asistencias: <b>23</b>`;
+  $promATotalV.id = 'prom-total-a-v';
+  $promATotalV.innerHTML = `Promedio de asistencias: <b>0.00</b>`;
 
   const $porcenATotalV = document.createElement('p');
   $porcenATotalV.classList.add('porcen-total-a-v');
-  $porcenATotalV.innerHTML = `Porcentaje de asistencias: <b>23</b>`;
+  $porcenATotalV.id = 'porcen-total-a-v';
+  $porcenATotalV.innerHTML = `Porcentaje de asistencias: <b>0.00%</b>`;
 
   //Suma de asistencias
   const $boxInputTotalA = document.createElement('div');
@@ -47,34 +50,8 @@ export function FormVarones() {
   $boxContResult.id = 'box-cont-result-v';
   // $boxContResult.innerHTML = `=<b class='result-total'></b>`;
   
-  // const $inputTotalAV1 = document.createElement('input');
-  // $inputTotalAV1.classList.add('input-total-a-v');
-  // $inputTotalAV1.type = 'number';
-  // const $inputTotalAV2 = document.createElement('input');
-  // $inputTotalAV2.classList.add('input-total-a-v');
-  // $inputTotalAV2.type = 'number';
-  // const $inputTotalAV3 = document.createElement('input');
-  // $inputTotalAV3.classList.add('input-total-a-v');
-  // $inputTotalAV3.type = 'number';
-  // const $inputTotalAV4 = document.createElement('input');
-  // $inputTotalAV4.classList.add('input-total-a-v');
-  // $inputTotalAV4.type = 'number';
-  // const $inputTotalAV5 = document.createElement('input');
-  // $inputTotalAV5.classList.add('input-total-a-v');
-  // $inputTotalAV5.type = 'number';
-  // const $inputTotalAV6 = document.createElement('input');
-  // $inputTotalAV6.classList.add('input-total-a-v');
-  // $inputTotalAV6.type = 'number';
-  
   $boxInputTotalA.appendChild($boxContInputs);
   $boxInputTotalA.appendChild($boxContResult);
-  // $boxContInputs.appendChild($inputTotalAV1);
-  // $boxContInputs.appendChild($inputTotalAV2);
-  // $boxContInputs.appendChild($inputTotalAV3);
-  // $boxContInputs.appendChild($inputTotalAV4);
-  // $boxContInputs.appendChild($inputTotalAV5);
-  // $boxContInputs.appendChild($inputTotalAV6);
-
 
   $formVarones.appendChild($titleV);
   $formVarones.appendChild($labelTotalA);

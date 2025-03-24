@@ -5,8 +5,7 @@ import { FormVarones } from './components/FormVarones.js';
 import { Header } from './components/Header.js'; 
 import { Title } from './components/Title.js';
 import { Total } from './components/Total.js';
-import { inputsDinamicos } from './helpers/inputsDinamicos.js';
-import { calcSuma } from './helpers/calcSuma.js';
+import { core } from './helpers/core.js';
 
 export function App() {
   const $root = document.getElementById('root');
@@ -20,6 +19,5 @@ export function App() {
   $root.appendChild(Total());
   $root.appendChild(SaveyDate());
 
-  inputsDinamicos();
-  calcSuma();
+  core();
 }

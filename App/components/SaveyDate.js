@@ -4,6 +4,7 @@ export function SaveyDate() {
 
   const $inputDate = document.createElement('input');
   $inputDate.classList.add('input-date');
+  $inputDate.id = 'input-date';
   $inputDate.type = 'month';
   $inputDate.name = 'monthAndYear';
   $inputDate.required = true;

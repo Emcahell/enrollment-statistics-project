@@ -8,6 +8,9 @@ export function FormDHabiles() {
   $inputDias.required = true;
   $inputDias.id = 'dias-habiles';
   $inputDias.placeholder = 'Ingresa los dias hábiles';
+  const $label = document.createElement('label');
+  $label.classList.add('label-dias-habiles');
+  $label.innerHTML = 'Dias hábiles:'
 
   const $button = document.createElement('button');
   $button.classList.add('button-dias-habiles');
@@ -15,6 +18,7 @@ export function FormDHabiles() {
   $button.id = 'btn-generar';
   $button.textContent = 'Listo';
 
+  $formDiasHabiles.appendChild($label);
   $formDiasHabiles.appendChild($inputDias);
   $formDiasHabiles.appendChild($button);
 

@@ -13,7 +13,13 @@
   background-color: #d3d3d32d;
 }
 
-.total{
-  padding: 5px;
+.total, .total-result{
+  padding: 10px;
   font-size: 17px;
+}
+
+.total-result{
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 1px solid lightgreen;
 }
