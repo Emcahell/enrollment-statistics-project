@@ -1,4 +1,4 @@
-export function FormVarones() {
+export const FormVarones = () => {
   const $formVarones = document.createElement('form');
   $formVarones.classList.add('form-varones');
 

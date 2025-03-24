@@ -1,4 +1,4 @@
-export function IconMenu() {
+export const IconMenu = () => {
   const $iconMenu = document.createElement('div');
   $iconMenu.classList.add('icon-menu');
 

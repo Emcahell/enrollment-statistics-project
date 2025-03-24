@@ -1,4 +1,4 @@
-export function Total() {
+export const Total = () => {
   const $boxTotal = document.createElement('section');
   $boxTotal.classList.add('box-total');
 

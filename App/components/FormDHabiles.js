@@ -1,4 +1,4 @@
-export function FormDHabiles() {
+export const FormDHabiles = () => {
   const $formDiasHabiles = document.createElement('form');
   $formDiasHabiles.classList.add('form-dias-habiles');
 

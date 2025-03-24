@@ -25,9 +25,11 @@ const generarIdUnico = (prefix, index) => `${prefix}-${index}-${Date.now()}`;
 btnGenerar.addEventListener("click", (e) => {
   e.preventDefault();
 
-  let cantidad = parseInt(dHabilesInput.value);
+  let dHabiles = parseInt(dHabilesInput.value);
+
+  dHabilesInput.dataset.value = dHabiles;
   
-  if (isNaN(cantidad) || cantidad <= 0 || cantidad > 99) {
+  if (isNaN(dHabiles) || dHabiles <= 0 || dHabiles > 99) {
       alert("Por favor, ingrese un número válido entre 1 y 99");
       return;
   }
@@ -40,7 +42,7 @@ btnGenerar.addEventListener("click", (e) => {
   boxContInputsV.innerHTML = "";
   boxContInputsH.innerHTML = "";
 
-  for (let i = 0; i < cantidad; i++) {
+  for (let i = 0; i < dHabiles; i++) {
       let inputTotAV = document.createElement("input");
       inputTotAV.type = "number";
       inputTotAV.classList.add("asisv");
@@ -57,7 +59,7 @@ btnGenerar.addEventListener("click", (e) => {
 
 
 // CALCULAR SUMA  
-function calcularSumaV() {
+const calcularSumaV = () => {
   let suma = 0;
   document.querySelectorAll('.asisv').forEach(input => {
     suma += parseInt(input.value) || 0;
@@ -66,7 +68,7 @@ function calcularSumaV() {
 }
 calcularSumaV();
 
-function calcularSumaH() {
+const calcularSumaH = () => {
   let suma = 0;
   document.querySelectorAll('.asish').forEach(input => {
       suma += parseInt(input.value) || 0;
@@ -84,8 +86,7 @@ document.addEventListener('input', e => {
   }
 });
 
-// CALCULAR PROMEDIO Y PORCENTAJEEE 
-
+// CALCULAR PROMEDIO Y PORCENTAJEEE
   buttonV.addEventListener('click', (e) => {
     e.preventDefault();
 
@@ -108,6 +109,7 @@ document.addEventListener('input', e => {
     provOutput.dataset.value = prov;
     porvOutput.dataset.value = porv;
     resultV.dataset.value = sumaV;
+    inputTotalV.dataset.value = totalv;
 
     provOutput.innerHTML = `Promedio de asistencias: <b>${prov.toFixed(2)}</b>`;
     porvOutput.innerHTML = `Porcentaje de asistencias: <b>${porv.toFixed
@@ -138,6 +140,7 @@ document.addEventListener('input', e => {
     prohOutput.dataset.value = proh;
     porhOutput.dataset.value = porh;
     resultH.dataset.value = sumaH;
+    inputTotalH.dataset.value = totalh;
 
     prohOutput.innerHTML = `Promedio de asistencias: <b>${proh.toFixed(2)}</b>`;
     porhOutput.innerHTML = `Porcentaje de asistencias: <b>${porh.toFixed
@@ -147,44 +150,21 @@ document.addEventListener('input', e => {
   });
 
   const calcularTotal = () => {
+    const dHabiles = parseFloat(dHabilesInput.dataset.value) || 0;
     const asisTotalV = parseFloat(resultV.dataset.value) || 0;
     const asisTotalH = parseFloat(resultH.dataset.value) || 0;
-    const prov = parseFloat(provOutput.dataset.value) || 0;
-    const proh = parseFloat(prohOutput.dataset.value) || 0;
-    const porv = parseFloat(porvOutput.dataset.value) || 0;
-    const porh = parseFloat(porhOutput.dataset.value) || 0;
+    const totalV = parseFloat(inputTotalV.dataset.value) || 0;
+    const totalH = parseFloat(inputTotalH.dataset.value) || 0;
+
+    let sumaTotal = asisTotalV + asisTotalH;
+    let provProhTotal = sumaTotal / dHabiles;
+    let porvPorhTotal = (provProhTotal * 100) / (totalV + totalH);    
 
     // console.log(`this ${prov}`);
     
-    totalSuma.innerHTML = `<b>${(asisTotalH + asisTotalV).toFixed(2)}</b>`;
-    totalProvProh.innerHTML = `<b>${(prov + proh).toFixed(2)}</b>`;
-    totalPorvPorh.innerHTML = `<b>${(porv + porh).toFixed(2)}%</b>`;
-}
-
-  // totalProvProh.innerHTML = `<b>${(prov + proh).toFixed(2)}</b>`;
-  // totalPorvPorh.innerHTML = `<b>${(porv + porh).toFixed(2)}%</b>`;
-
-
-//   function calcularPorcentajes() {
-//     const diasA = parseInt(dHabilesInput.value) || 1;
-//     const sumaV = parseInt(resultV.textContent.replace('Suma: ', '')) || 0;
-//     const sumaH = parseInt(resultH.textContent.replace('Suma: ', '')) || 0;
-//     const totalv = parseInt(inputTotalV.value) || 1;
-//     const totalh = parseInt(inputTotalH.value) || 1;
-    
-//     const prov = sumaV / diasA;
-//     const proh = sumaH / diasA;
-//     const porv = (prov * 100) / totalv;
-//     const porh = (proh * 100) / totalh;
-    
-//     provOutput.innerHTML = `Promedio de asistencias: <b>${prov.toFixed(2)}</b>`;
-//     prohOutput.innerHTML = `Promedio de asistencias: <b>${proh.toFixed(2)}</b>`;
-//     porvOutput.innerHTML = `Porcentaje de asistencias: <b>${porv.toFixed(2)}%</b>`;
-//     porhOutput.innerHTML = `Porcentaje de asistencias: <b>${porh.toFixed(2)}%</b>`;
-    
-//     totalProvProh.innerHTML = `<b>${(prov + proh).toFixed(2)}</b>`;
-//     totalPorvPorh.innerHTML = `<b>${(porv + porh).toFixed(2)}%</b>`;
-// }
-
+    totalSuma.innerHTML = `<b>${(sumaTotal).toFixed(2)}</b>`;
+    totalProvProh.innerHTML = `<b>${(provProhTotal).toFixed(2)}</b>`;
+    totalPorvPorh.innerHTML = `<b>${(porvPorhTotal).toFixed(2)}%</b>`;
+  }
 
 }

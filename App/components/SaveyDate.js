@@ -1,4 +1,4 @@
-export function SaveyDate() {
+export const SaveyDate = () => {
   const $saveyDate = document.createElement('div');
   $saveyDate.classList.add('cont-save-date');
 

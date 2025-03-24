@@ -7,7 +7,7 @@ import { Title } from './components/Title.js';
 import { Total } from './components/Total.js';
 import { core } from './helpers/core.js';
 
-export function App() {
+export const App = () => {
   const $root = document.getElementById('root');
 
   $root.innerHTML = null;

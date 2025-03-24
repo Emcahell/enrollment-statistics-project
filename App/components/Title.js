@@ -1,4 +1,4 @@
-export function Title() {
+export const  Title = () => {
   const $title = document.createElement('div');
   $title.classList.add('box-title');
 

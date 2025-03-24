@@ -1,4 +1,4 @@
-export function FormHembras() {
+export const FormHembras = () => {
   const $formHembras = document.createElement('form');
   $formHembras.classList.add('form-hembras');
 
