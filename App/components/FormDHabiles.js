@@ -14,8 +14,8 @@ export const FormDHabiles = () => {
 
   const $button = document.createElement('button');
   $button.classList.add('button-dias-habiles');
-  $button.type = 'submit';
   $button.id = 'btn-generar';
+  $button.type = 'submit';
   $button.textContent = 'Listo';
 
   $formDiasHabiles.appendChild($label);

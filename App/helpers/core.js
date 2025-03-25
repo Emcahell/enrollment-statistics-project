@@ -18,6 +18,8 @@ export function core() {
   const totalPorvPorh = document.getElementById('total-por-a');
   const buttonV = document.getElementById('button-v');
   const buttonH = document.getElementById('button-h');
+  const buttonSave = document.getElementById('btn-save');
+  const mesInput = document.getElementById('input-date');
 
   // INPUTS DINAMICOS
 const generarIdUnico = (prefix, index) => `${prefix}-${index}-${Date.now()}`;
@@ -166,5 +168,41 @@ document.addEventListener('input', e => {
     totalProvProh.innerHTML = `<b>${(provProhTotal).toFixed(2)}</b>`;
     totalPorvPorh.innerHTML = `<b>${(porvPorhTotal).toFixed(2)}%</b>`;
   }
+
+  // FUNCIÓN PARA GUARDAR EN LOCALSTORAGE
+buttonSave.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const mes = mesInput.value;
+  if (!mes) {
+    Swal.fire('No cielito, selecciona un mes antes de guardar.');
+    return;
+}
+  
+  const datos = {
+      mes,
+      totalv: inputTotalV.value,
+      totalh: inputTotalH.value,
+      sumaTotalvTotalh: parseInt(inputTotalV.value) + parseInt(inputTotalH.value),
+      prov: provOutput.dataset.value,
+      proh: prohOutput.dataset.value,
+      porv: porvOutput.dataset.value,
+      porh: porhOutput.dataset.value
+  };
+  
+  let historial = JSON.parse(localStorage.getItem('historial')) || [];
+  historial.unshift(datos);
+  localStorage.setItem('historial', JSON.stringify(historial));
+
+  Swal.fire({
+    icon: 'success',
+    text: 'Los datos han sido almacenados correctamente.',
+    confirmButtonText: 'Aceptar'
+}).then(() => {
+    location.reload();
+});
+  
+});
+
 
 }
