@@ -1,4 +1,4 @@
-export function core() {
+export const core = () => {
   
   const dHabilesInput = document.getElementById('dias-habiles');
   const btnGenerar = document.getElementById('btn-generar');
@@ -20,6 +20,7 @@ export function core() {
   const buttonH = document.getElementById('button-h');
   const buttonSave = document.getElementById('btn-save');
   const mesInput = document.getElementById('input-date');
+  // const contenedorHistorial = document.getElementById('contenedor-historial');
 
   // INPUTS DINAMICOS
 const generarIdUnico = (prefix, index) => `${prefix}-${index}-${Date.now()}`;
@@ -169,7 +170,7 @@ document.addEventListener('input', e => {
     totalPorvPorh.innerHTML = `<b>${(porvPorhTotal).toFixed(2)}%</b>`;
   }
 
-  // FUNCIÓN PARA GUARDAR EN LOCALSTORAGE
+  // GUARDAR EN LOCALSTORAGE
 buttonSave.addEventListener('click', (e) => {
   e.preventDefault();
 
@@ -196,13 +197,35 @@ buttonSave.addEventListener('click', (e) => {
 
   Swal.fire({
     icon: 'success',
-    text: 'Los datos han sido almacenados correctamente.',
+    text: 'Tus datos han sido guardados correctamente 😊',
     confirmButtonText: 'Aceptar'
 }).then(() => {
-    location.reload();
+    setTimeout(() => {
+      location.reload();
+  }, 1000);
 });
   
 });
 
+// mostrar historial
+// document.addEventListener('DOMContentLoaded', mostrarHistorial);
+// const mostrarHistorial = () => {
+//   console.log("Ejecutando mostrarHistorial");
+//     contenedorHistorial.innerHTML = '';
+//     let historial = JSON.parse(localStorage.getItem('historial')) || [];
+//     historial.forEach((item) => {
+//         const card = document.createElement('div');
+//         card.className = 'card';
+//         card.innerHTML = `<h3>${item.mes}</h3>
+//                           <table>
+//                             <tr><td>Prov</td><td>${item.prov}</td></tr>
+//                             <tr><td>Proh</td><td>${item.proh}</td></tr>
+//                             <tr><td>Porv</td><td>${item.porv}%</td></tr>
+//                             <tr><td>Porh</td><td>${item.porh}%</td></tr>
+//                           </table>`;
+//         contenedorHistorial.appendChild(card);
+//     });
+//   }
+// document.addEventListener('DOMContentLoaded', mostrarHistorial);
 
 }

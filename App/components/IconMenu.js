@@ -5,6 +5,7 @@ export const IconMenu = () => {
   const $iconImg = document.createElement('img');
   $iconImg.src = './App/assets/icon-menu-left.svg';
   $iconImg.alt = 'menú';
+  $iconImg.id = 'icon-open';
   $iconMenu.appendChild($iconImg);
 
   return $iconMenu;

@@ -80,9 +80,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
   cursor: pointer;
 }
 
 .button-calc:hover{
   background-color: #87df87;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 733px){
+  .form-hembras{
+      width: 50%;
+  }
 }

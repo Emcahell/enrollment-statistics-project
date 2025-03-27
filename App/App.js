@@ -8,11 +8,15 @@ import { Total } from './components/Total.js';
 import { Contenido } from './components/Contenido.js';
 import { core } from './helpers/core.js';
 import { router } from './helpers/router.js';
+import { addHistorial } from './helpers/addHistorial.js';
+import { sidebarShow } from './helpers/sidebarShow.js';
+import { Sidebar } from './components/Sidebar.js';
 
 export const App = () => {
   const $root = document.getElementById('root');
 
   $root.innerHTML = null;
+  $root.appendChild(Sidebar());
   $root.appendChild(Header());
   $root.appendChild(Contenido());
   // $root.appendChild(Title());
@@ -24,4 +28,6 @@ export const App = () => {
 
   router();
   core();
+  addHistorial();
+  sidebarShow();
 }

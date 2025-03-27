@@ -1,0 +1,105 @@
+.sidebar{
+  position: absolute;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #3fda6669;
+  background-image: linear-gradient(150deg, #87f89a 50%, #c5ffd4);
+  z-index: 20;
+  transition: transform .3s ease;
+  transform: translate(-110%, 0);
+}
+
+.panel-active{
+  transform: translate(0.0);
+}
+
+.body.showPseudo::before{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 100vw;
+  margin-top: -1px;
+  background-color:rgba(0, 0, 0, 0.62);
+  z-index: 15;
+}
+
+.box-icon-close{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.icon-close{
+  padding: 15px;
+  cursor: pointer;
+}
+
+.icon-clock, .icon-home{
+  margin: 0 10px;
+}
+
+.icon-brand-x, .icon-brand-github{
+  width: 15px;
+  margin-left: 10px;
+}
+
+.menu{
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  min-height: 100px;
+}
+
+.option-historial, .option-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 95%;
+  padding: 10px 0;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #27d661;
+  cursor: pointer;
+}
+
+.option-historial:hover, .option-home:hover{
+  background-color: #49dd7a;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.info-footer{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.footer-title{
+  font-size: 10px;
+}
+
+.logo{
+  width: 120px;
+}
+
+.boxSocialMedia{
+  display: flex;
+  margin-left: 7px;
+  margin-top: 7px;
+}

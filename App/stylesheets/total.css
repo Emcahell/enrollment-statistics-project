@@ -23,3 +23,11 @@
   border-radius: 5px;
   border: 1px solid lightgreen;
 }
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 733px){
+  .box-total{
+      width: 50%;
+  }
+}

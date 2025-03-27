@@ -10,7 +10,7 @@ export const Historial = () => {
 
   const $contenedorCards = document.createElement('div');
   $contenedorCards.classList.add('contenedor-cards');
-  $contenedorCards.id = 'contenedor-cards';
+  $contenedorCards.id = 'contenedor-historial';
 
   $historial.appendChild($titleHistorial);
   $historial.appendChild($contenedorCards);

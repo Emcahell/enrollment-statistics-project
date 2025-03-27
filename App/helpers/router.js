@@ -21,9 +21,9 @@ export const router = () => {
 }
   
   const mostrarComponentesHistorial = () => {
-    const contenido = document.getElementById('contenido');
+    const $contenido = document.getElementById('contenido');
 
-    contenido.appendChild(Historial());
+    $contenido.appendChild(Historial());
 
   }
   
