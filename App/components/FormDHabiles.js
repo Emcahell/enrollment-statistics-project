@@ -1,6 +1,7 @@
 export const FormDHabiles = () => {
   const $formDiasHabiles = document.createElement('form');
   $formDiasHabiles.classList.add('form-dias-habiles');
+  $formDiasHabiles.id = 'form';
 
   const $inputDias = document.createElement('input');
   $inputDias.classList.add('input-habiles');

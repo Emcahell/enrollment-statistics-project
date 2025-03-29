@@ -1,3 +1,8 @@
+:root {
+  --bg-header: #93eca2;
+  --bg-primary: #dff3dd;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +16,7 @@ body{
   align-items: center;
   flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: radial-gradient(#ffffff, #f5f5f5);
+  background: var(--bg-primary);
   background-repeat: no-repeat;
 }
 

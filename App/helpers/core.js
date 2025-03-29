@@ -22,11 +22,10 @@ export const core = () => {
   const mesInput = document.getElementById('input-date');
   // const contenedorHistorial = document.getElementById('contenedor-historial');
 
-  // INPUTS DINAMICOS
-const generarIdUnico = (prefix, index) => `${prefix}-${index}-${Date.now()}`;
 
+const generar = () => {
 btnGenerar.addEventListener("click", (e) => {
-  e.preventDefault();
+  e.preventDefault();  
 
   let dHabiles = parseInt(dHabilesInput.value);
 
@@ -45,6 +44,8 @@ btnGenerar.addEventListener("click", (e) => {
   boxContInputsV.innerHTML = "";
   boxContInputsH.innerHTML = "";
 
+  const generarIdUnico = (prefix, index) => `${prefix}-${index}-${Date.now()}`;
+
   for (let i = 0; i < dHabiles; i++) {
       let inputTotAV = document.createElement("input");
       inputTotAV.type = "number";
@@ -59,7 +60,8 @@ btnGenerar.addEventListener("click", (e) => {
       boxContInputsH.appendChild(inputTotAH);
   }
 });
-
+}
+generar();
 
 // CALCULAR SUMA  
 const calcularSumaV = () => {
@@ -163,7 +165,8 @@ document.addEventListener('input', e => {
     let provProhTotal = sumaTotal / dHabiles;
     let porvPorhTotal = (provProhTotal * 100) / (totalV + totalH);    
 
-    // console.log(`this ${prov}`);
+    totalProvProh.dataset.value = provProhTotal;
+    totalPorvPorh.dataset.value = porvPorhTotal;
     
     totalSuma.innerHTML = `<b>${(sumaTotal).toFixed(2)}</b>`;
     totalProvProh.innerHTML = `<b>${(provProhTotal).toFixed(2)}</b>`;
@@ -173,6 +176,7 @@ document.addEventListener('input', e => {
   // GUARDAR EN LOCALSTORAGE
 buttonSave.addEventListener('click', (e) => {
   e.preventDefault();
+  console.log('button save');
 
   const mes = mesInput.value;
   if (!mes) {
@@ -188,7 +192,9 @@ buttonSave.addEventListener('click', (e) => {
       prov: provOutput.dataset.value,
       proh: prohOutput.dataset.value,
       porv: porvOutput.dataset.value,
-      porh: porhOutput.dataset.value
+      porh: porhOutput.dataset.value,
+      provProhTotal: totalProvProh.dataset.value,
+      porvPorhTotal: totalPorvPorh.dataset.value
   };
   
   let historial = JSON.parse(localStorage.getItem('historial')) || [];
@@ -200,9 +206,9 @@ buttonSave.addEventListener('click', (e) => {
     text: 'Tus datos han sido guardados correctamente 😊',
     confirmButtonText: 'Aceptar'
 }).then(() => {
-    setTimeout(() => {
+    // setTimeout(() => {
       location.reload();
-  }, 1000);
+  // }, 1000);
 });
   
 });
@@ -227,5 +233,6 @@ buttonSave.addEventListener('click', (e) => {
 //     });
 //   }
 // document.addEventListener('DOMContentLoaded', mostrarHistorial);
+
 
 }

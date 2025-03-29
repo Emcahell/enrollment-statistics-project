@@ -1,9 +1,9 @@
-import { IconClock } from "./IconClock.js";
-import { IconClose } from "./IconClose.js";
-import { IconGitHub } from "./IconGitHub.js";
-import { IconHome } from "./IconHome.js";
-import { Iconx } from "./IconX.js";
-import { LogoEmcahell } from "./LogoEmcahell.js";
+import { IconClock } from "./icons/IconClock.js";
+import { IconClose } from "./icons/IconClose.js";
+import { IconGitHub } from "./icons/IconGitHub.js";
+import { IconHome } from "./icons/IconHome.js";
+import { Iconx } from "./icons/IconX.js";
+import { LogoEmcahell } from "./icons/LogoEmcahell.js";
 
 export const Sidebar = () => {
 

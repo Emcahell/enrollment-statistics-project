@@ -1,14 +1,6 @@
-import { SaveyDate } from './components/SaveyDate.js';
-import { FormDHabiles } from './components/FormDHabiles.js';
-import { FormHembras } from './components/FormHembras.js';
-import { FormVarones } from './components/FormVarones.js';
 import { Header } from './components/Header.js'; 
-import { Title } from './components/Title.js';
-import { Total } from './components/Total.js';
 import { Contenido } from './components/Contenido.js';
-import { core } from './helpers/core.js';
 import { router } from './helpers/router.js';
-import { addHistorial } from './helpers/addHistorial.js';
 import { sidebarShow } from './helpers/sidebarShow.js';
 import { Sidebar } from './components/Sidebar.js';
 
@@ -19,15 +11,7 @@ export const App = () => {
   $root.appendChild(Sidebar());
   $root.appendChild(Header());
   $root.appendChild(Contenido());
-  // $root.appendChild(Title());
-  // $root.appendChild(FormDHabiles());
-  // $root.appendChild(FormVarones());
-  // $root.appendChild(FormHembras());
-  // $root.appendChild(Total());
-  // $root.appendChild(SaveyDate());
 
   router();
-  core();
-  addHistorial();
   sidebarShow();
 }

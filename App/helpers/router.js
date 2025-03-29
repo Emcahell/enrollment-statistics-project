@@ -5,34 +5,38 @@ import { FormHembras } from "../components/FormHembras.js";
 import { SaveyDate } from "../components/SaveyDate.js";
 import { Total } from "../components/Total.js";
 import { Historial } from "../components/Historial.js";
+import { core } from "./core.js";
+import { addHistorial } from "./addHistorial.js";
 
 export const router = () => {
+
+  const $contenido = document.getElementById('contenido');
   
   const mostrarComponentesIniciales = () => {
-  const $contenido = document.getElementById('contenido');
+    $contenido.innerHTML = '';
+    $contenido.appendChild(Title());
+    $contenido.appendChild(FormDHabiles());
+    $contenido.appendChild(FormVarones());
+    $contenido.appendChild(FormHembras());
+    $contenido.appendChild(Total());
+    $contenido.appendChild(SaveyDate());
 
-  $contenido.appendChild(Title());
-  $contenido.appendChild(FormDHabiles());
-  $contenido.appendChild(FormVarones());
-  $contenido.appendChild(FormHembras());
-  $contenido.appendChild(Total());
-  $contenido.appendChild(SaveyDate());
-
-}
-  
-  const mostrarComponentesHistorial = () => {
-    const $contenido = document.getElementById('contenido');
-
-    $contenido.appendChild(Historial());
-
+    core();
   }
   
-    const hashActual = window.location.hash;
-  
-    if (hashActual === '' || hashActual === '#/') {
-      mostrarComponentesIniciales();
-    } else if (hashActual === '#/historial') {
-      mostrarComponentesHistorial();
-    }
+  const mostrarComponentesHistorial = () => {
+    $contenido.innerHTML = '';
+    $contenido.appendChild(Historial());
 
+    addHistorial();
+  }
+  
+  const hashActual = window.location.hash;
+    
+  if (hashActual === '' || hashActual === '#/') {
+    mostrarComponentesIniciales();
+  } else if (hashActual === '#/historial') {
+    mostrarComponentesHistorial();
+  }
+  
 }

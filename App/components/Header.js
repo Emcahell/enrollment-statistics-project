@@ -1,4 +1,4 @@
-import { IconMenu } from './IconMenu.js';
+import { IconMenu } from './icons/IconMenu.js';
 
 export const Header = () => {
   const $header = document.createElement('header');
