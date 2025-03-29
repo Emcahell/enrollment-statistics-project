@@ -20,6 +20,14 @@ body{
   background-repeat: no-repeat;
 }
 
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 input[type="number"] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;

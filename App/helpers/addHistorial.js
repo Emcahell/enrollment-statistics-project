@@ -87,7 +87,6 @@ export const addHistorial = () => {
   addHistorialData();
   
   const eliminarCard = (event) => {
-    console.log('intentando eliminar..');
     
     let historial = JSON.parse(localStorage.getItem('historial')) || [];
     const index = parseInt(event.target.getAttribute('data-id'));

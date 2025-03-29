@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="theme-color" content="#06c1db">
+  <meta name="theme-color" content="#dff3dd">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./App/stylesheets/index.css">
   <link rel="stylesheet" href="./App/stylesheets/header.css">
@@ -17,7 +17,14 @@
   <title>Estadistica de matricula</title>
 </head>
 <body id="body" class="body">
+
+  <div class="loader" id="loader">
+    <l-treadmill size="70" speed="1.25" color="#5fdf5f" ></l-treadmill>
+  </div>
+  
   <main id="root"></main>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/treadmill.js"></script>
   <script src='./App/index.js' type='module'></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

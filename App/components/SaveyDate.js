@@ -2,6 +2,9 @@ export const SaveyDate = () => {
   const $saveyDate = document.createElement('div');
   $saveyDate.classList.add('cont-save-date');
 
+  const $label = document.createElement('label');
+  $label.classList.add('label-date');
+  $label.textContent = 'Selecciona un mes';
   const $inputDate = document.createElement('input');
   $inputDate.classList.add('input-date');
   $inputDate.id = 'input-date';
@@ -16,6 +19,7 @@ export const SaveyDate = () => {
   $button.type = 'submit';
   $button.textContent = 'Guardar datos';
 
+  $saveyDate.appendChild($label);
   $saveyDate.appendChild($inputDate);
   $saveyDate.appendChild($button);
 

@@ -9,19 +9,31 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 4px;
-  border: 1px solid lightgray;
-  background-color: #d3d3d32d;
+  border: 1px solid #e6e6e6e0;
+  background-color: #f1fff1;
+}
+
+.box-result-total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
 }
 
 .total, .total-result{
   padding: 10px;
   font-size: 17px;
+  font-weight: 600;
+  opacity: .7;
 }
 
 .total-result{
+  width: auto;
+  height: 20px;
   padding: 7px 15px;
   border-radius: 5px;
-  border: 1px solid lightgreen;
+  /* border: 1px solid #90ee90e1; */
 }
 
 /* MEDIA QUERYS */
