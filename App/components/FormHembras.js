@@ -15,7 +15,7 @@ export const FormHembras = () => {
   $inputTotalH.placeholder = 'Ingresa el total de hembras';
 
   const $labelTotalH = document.createElement('label');
-  $labelTotalH.classList.add('label');
+  $labelTotalH.classList.add('label', 'label-total-h');
   $labelTotalH.innerHTML = 'Total de hembras:'
 
   const $button = document.createElement('button');

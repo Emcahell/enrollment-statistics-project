@@ -15,7 +15,7 @@ export const FormVarones = () => {
   $inputTotalV.placeholder = 'Ingresa el total de varones';
 
   const $labelTotalV = document.createElement('label');
-  $labelTotalV.classList.add('label');
+  $labelTotalV.classList.add('label', 'label-total-v');
   $labelTotalV.innerHTML = 'Total de varones:'
 
   const $button = document.createElement('button');

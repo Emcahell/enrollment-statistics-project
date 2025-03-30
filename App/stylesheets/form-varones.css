@@ -27,6 +27,11 @@
     left: -23px;
 }
 
+.label-total-v{
+    position: relative;
+    left: -23px;
+}
+
 .box-input-total{
     width: 250px;
     display: flex;
@@ -36,7 +41,7 @@
 }
 
 .box-cont-inputs{
-    width: 160px;
+    width: 180px;
     display: flex;
     overflow-x: scroll;
     gap: 7px;
@@ -55,8 +60,8 @@
 }
 
 .asisv{
-    width: 25px;
-    height: 20px;
+    width: 30px;
+    height: 25px;
 }
 
 .asisv:focus{
@@ -65,7 +70,7 @@
 
 .input-total-v{
     width: 230px;
-    height: 20px;
+    height: 25px;
 }
 
 .input-total-v:focus{
