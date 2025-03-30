@@ -39,7 +39,7 @@ export const FormHembras = () => {
   $boxInputTotalA.classList.add('box-input-total');
 
   const $labelTotalA = document.createElement('label');
-  $labelTotalA.classList.add('label');
+  $labelTotalA.classList.add('label', 'label-asish');
   $labelTotalA.innerHTML = 'Asistencia:'
 
   const $boxContInputs = document.createElement('div');

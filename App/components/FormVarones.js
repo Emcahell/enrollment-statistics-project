@@ -39,7 +39,7 @@ export const FormVarones = () => {
   $boxInputTotalA.classList.add('box-input-total');
 
   const $labelTotalA = document.createElement('label');
-  $labelTotalA.classList.add('label');
+  $labelTotalA.classList.add('label', 'label-asisv');
   $labelTotalA.innerHTML = 'Asistencia:'
 
   const $boxContInputs = document.createElement('div');

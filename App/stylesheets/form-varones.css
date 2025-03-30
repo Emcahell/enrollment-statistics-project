@@ -17,13 +17,18 @@
 .title-v{
     width: 100%;
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: left;
     font-size: 16px;
 }
 
+.label-asisv{
+    position: relative;
+    left: -23px;
+}
+
 .box-input-total{
-    width: 200px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +36,7 @@
 }
 
 .box-cont-inputs{
-    width: 130px;
+    width: 160px;
     display: flex;
     overflow-x: scroll;
     gap: 7px;
@@ -50,11 +55,17 @@
 }
 
 .asisv{
-    width: 17px;
+    width: 25px;
+    height: 20px;
 }
 
 .asisv:focus{
     border: 1px solid #87df87;
+}
+
+.input-total-v{
+    width: 230px;
+    height: 20px;
 }
 
 .input-total-v:focus{
@@ -87,6 +98,7 @@
 
 .button-calc{
     width: 200px;
+    height: 25px;
     margin-top: 10px;
     padding: 4px 0;
     margin-bottom: 20px;

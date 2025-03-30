@@ -20,6 +20,7 @@
 
 .input-date{
   width: 130px;
+  height: 15px;
   padding: 5px 10px;
   font-size: 9px;
   border: 1px solid #ccc;
@@ -29,6 +30,7 @@
 
 .button-save{
   width: 200px;
+  height: 30px;
   padding: 5px 5px;
   margin-top: 20px;
   border: none;
