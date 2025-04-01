@@ -1,0 +1,131 @@
+@import './index.css';
+
+.form-varones, .form-hembras{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #f1fff1;
+}
+
+.label{
+  width: 200px;
+  font-size: 10px;
+  padding: 5px;
+  text-align: start;
+  font-weight: 600;
+  opacity: .7;
+}
+
+.title-v, .title-h{
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.label-total-v, .label-total-h{
+  position: relative;
+  left: -23px;
+}
+
+.label-asisv, .label-asish{
+  position: relative;
+  left: -23px;
+}
+
+.box-input-total{
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.box-cont-inputs{
+  width: 180px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 7px;
+}
+
+.box-cont-result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.result-total{
+  margin-left: 10px;
+}
+
+.asisv, .asish{
+  width: 30px;
+  height: 25px;
+}
+
+.asisv:focus, .asish:focus{
+  border: 1px solid var(--green-secondary);
+  box-shadow: 0 0 1px var(--green-secondary);
+}
+
+.input-total-v, .input-total-h{
+  width: 230px;
+  height: 25px;
+}
+
+.input-total-v:focus, .input-total-h:focus{
+  border: 1px solid var(--green-secondary);
+  box-shadow: 0 0 1px var(--green-secondary);
+}
+
+.prom-total-a-v, .prom-total-a-h{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  opacity: .7;
+}
+
+.porcen-total-a-v, .porcen-total-a-h{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  opacity: .7;
+}
+
+.button-calc{
+  width: 200px;
+  height: 25px;
+  margin-top: 10px;
+  padding: 4px 0;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--green-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-calc:hover{
+  background-color: var(--green-secondary);
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 733px){
+  .form-varones, .form-hembras{
+      width: 50%;
+  }
+}

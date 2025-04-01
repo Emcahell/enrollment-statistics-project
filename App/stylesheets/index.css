@@ -1,6 +1,9 @@
 :root {
   --bg-header: #93eca2;
   --bg-primary: #dff3dd;
+
+  --green-primary: #90ee90;
+  --green-secondary: #87df87;
 }
 
 *{

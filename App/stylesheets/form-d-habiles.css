@@ -1,3 +1,5 @@
+@import './index.css';
+
 .form-dias-habiles{
   position: relative;
   display: flex;
@@ -24,8 +26,8 @@
 }
 
 .input-habiles:focus{
-  border: 1px solid lightgreen !important;
-  box-shadow: 0 0 1px #87df87;
+  border: 1px solid var(--green-primary) !important;
+  box-shadow: 0 0 1px var(--green-secondary);
 }
 
 .button-dias-habiles{
@@ -33,10 +35,10 @@
   border-radius: 0 5px 5px 0;
   border: none;
   letter-spacing: .5px;
-  background-color: lightgreen;
+  background-color: var(--green-primary);
   cursor: pointer;
 }
 
 .button-dias-habiles:hover{
-  background-color: #87df87;
+  background-color: var(--green-secondary);
 }
