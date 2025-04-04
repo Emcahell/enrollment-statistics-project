@@ -5,13 +5,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 30px 10px;
+  border-radius: 10px;
+  background-color: var(--bg-card);
 }
 
 .label-dias-habiles{
   position: relative;
   bottom: 27px;
-  left: 20px;
+  left: 5px;
   font-size: 11px;
   padding: 5px;
   text-align: start;
@@ -20,9 +24,9 @@
 }
 
 .input-habiles{
-  width: 220px;
+  width: 230px;
   height: 25px;
-  margin-left: -55px;
+  margin-left: -70px;
   border-radius: 5px 0 0 5px !important;
   margin-bottom: 0 !important;
 }
@@ -45,4 +49,12 @@
 
 .button-dias-habiles:hover{
   background-color: var(--green-secondary);
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 733px){
+  .form-dias-habiles{
+      width: 50%;
+  }
 }

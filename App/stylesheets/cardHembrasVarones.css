@@ -8,10 +8,10 @@
   align-items: center;
   padding: 10px;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  background-color: #f1fff1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: var(--bg-card);
 }
 
 .label{
@@ -112,7 +112,7 @@
 }
 
 .button-calc{
-  width: 230px;
+  width: 252px;
   height: 30px;
   margin-top: 10px;
   padding: 4px 0;

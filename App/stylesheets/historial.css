@@ -1,3 +1,5 @@
+@import './index.css';
+
 .historial, .contenedor-cards{
   display: flex;
   justify-content: center;
@@ -28,9 +30,9 @@
   position: relative;
   width: 85%;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid #e6e6e6e0;
-  background-color: #f1fff1;
+  background-color: var(--bg-card);
 }
 
 .header-card{

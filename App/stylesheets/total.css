@@ -1,3 +1,5 @@
+@import './index.css';
+
 .box-total{
   width: 90%;
   display: flex;
@@ -6,11 +8,11 @@
   align-items: center;
   padding: 10px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid #e6e6e6e0;
-  background-color: #f1fff1;
+  background-color: var(--bg-card);
 }
 
 .box-result-total{
