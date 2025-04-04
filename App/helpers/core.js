@@ -40,6 +40,9 @@ btnGenerar.addEventListener("click", (e) => {
   inputTotalV.disabled = false;
   inputTotalH.disabled = false;
   inputDate.disabled = false;
+  buttonV.disabled = false;
+  buttonH.disabled = false;
+  buttonSave.disabled = false;
 
   boxContInputsV.innerHTML = "";
   boxContInputsH.innerHTML = "";

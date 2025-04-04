@@ -17,6 +17,7 @@ export const SaveyDate = () => {
   $button.classList.add('button-save');
   $button.id = 'btn-save';
   $button.type = 'submit';
+  $button.disabled = true;
   $button.textContent = 'Guardar datos';
 
   $saveyDate.appendChild($label);

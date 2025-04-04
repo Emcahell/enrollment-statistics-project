@@ -22,6 +22,7 @@ export const FormHembras = () => {
   $button.classList.add('button-calc');
   $button.id = 'button-h';
   $button.type = 'button';
+  $button.disabled = true;
   $button.textContent = 'Calcular';
 
   const $boxContPromPorTotal = document.createElement('div');
