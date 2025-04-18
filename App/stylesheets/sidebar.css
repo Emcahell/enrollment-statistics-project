@@ -1,11 +1,13 @@
+@import 'index.css';
+
 .sidebar{
   position: fixed;
   left: 0;
   width: 60%;
   height: 100%;
   border-radius: 0 10px 10px 0;
-  border: 1px solid #3fda6669;
-  background-image: linear-gradient(150deg, #9ff7ae 50%, #d7ffe2);
+  border: 1px solid #93ffae9f;
+  background-image: linear-gradient(150deg, var(--bg-header) 50%, #d7ffe2);
   z-index: 20;
   transition: transform .3s ease;
   transform: translate(-110%, 0);
@@ -69,12 +71,12 @@
   margin-bottom: 10px;
   border-radius: 5px;
   font-weight: bold;
-  background-color: #49e47c;
+  background-color: #3bd488;
   cursor: pointer;
 }
 
 .option-historial:hover, .option-home:hover{
-  background-color: #49dd7a;
+  background-color: #54d17e;
 }
 
 .footer{
