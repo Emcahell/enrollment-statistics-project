@@ -3,7 +3,7 @@ import { IconClose } from "./icons/IconClose.js";
 import { IconGitHub } from "./icons/IconGitHub.js";
 import { IconHome } from "./icons/IconHome.js";
 import { IconInstagram } from "./icons/IconInstagram.js";
-import { Iconx } from "./icons/IconX.js";
+// import { Iconx } from "./icons/IconX.js";
 // import { LogoEmcahell } from "./icons/LogoEmcahell.js";
 
 export const Sidebar = () => {
@@ -41,7 +41,7 @@ export const Sidebar = () => {
   const $footerTitle = document.createElement('p');
   $footerTitle.classList.add('footer-title');
   $footerTitle.innerHTML = `
-      <span> Desarrollado por Emcahell </span>
+      <span> Made by Emcahell </span>
       <span
         style='font-size: 9px; color: #004925'
       > v.0.3.0 </span>

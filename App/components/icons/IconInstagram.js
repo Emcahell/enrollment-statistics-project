@@ -1,12 +1,12 @@
-export const IconInstagram = () => {
-  const $BoxIconInstagram = document.createElement('a');
-  $BoxIconInstagram.href = 'https://instagram.com/kromwellykz';
+export const IconLinkedIn = () => {
+  const $BoxIconLinkedIn = document.createElement('a');
+  $BoxIconLinkedIn.href = 'https://www.linkedin.com/in/emmanuel-castro/';
 
-  const $IconInstagram = document.createElement('img');
-  $IconInstagram.src = './App/assets/brand-instagram.svg';
-  $IconInstagram.classList.add('icon-brand-instagram');
+  const $IconLinkedIn = document.createElement('img');
+  $IconLinkedIn.src = './App/assets/brand-linkedin.svg';
+  $IconLinkedIn.classList.add('icon-brand-instagram');
 
-  $BoxIconInstagram.appendChild($IconInstagram);
+  $BoxIconLinkedIn.appendChild($IconLinkedIn);
 
-  return $BoxIconInstagram;
+  return $BoxIconLinkedIn;
 } 
