@@ -2,7 +2,7 @@ import { IconClock } from "./icons/IconClock.js";
 import { IconClose } from "./icons/IconClose.js";
 import { IconGitHub } from "./icons/IconGitHub.js";
 import { IconHome } from "./icons/IconHome.js";
-import { IconInstagram } from "./icons/IconInstagram.js";
+import { IconInstagram, IconLinkedIn } from "./icons/IconLinkedIn.js";
 // import { Iconx } from "./icons/IconX.js";
 // import { LogoEmcahell } from "./icons/LogoEmcahell.js";
 
@@ -63,7 +63,7 @@ export const Sidebar = () => {
   $footerInfo.appendChild($boxsocialMedia);
   $boxsocialMedia.appendChild(IconGitHub());
   // $boxsocialMedia.appendChild(Iconx());
-  $boxsocialMedia.appendChild(IconInstagram());
+  $boxsocialMedia.appendChild(IconLinkedIn());
 
   return $sidebar;
 }
