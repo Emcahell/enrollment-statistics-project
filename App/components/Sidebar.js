@@ -2,7 +2,7 @@ import { IconClock } from "./icons/IconClock.js";
 import { IconClose } from "./icons/IconClose.js";
 import { IconGitHub } from "./icons/IconGitHub.js";
 import { IconHome } from "./icons/IconHome.js";
-import { IconInstagram, IconLinkedIn } from "./icons/IconLinkedIn.js";
+import { IconLinkedIn } from "./icons/IconLinkedIn.js";
 // import { Iconx } from "./icons/IconX.js";
 // import { LogoEmcahell } from "./icons/LogoEmcahell.js";
 
