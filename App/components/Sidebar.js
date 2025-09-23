@@ -62,7 +62,7 @@ export const Sidebar = () => {
   // $footerInfo.appendChild(LogoEmcahell());
   $footerInfo.appendChild($boxsocialMedia);
   $boxsocialMedia.appendChild(IconGitHub());
-  $boxsocialMedia.appendChild(Iconx());
+  // $boxsocialMedia.appendChild(Iconx());
   $boxsocialMedia.appendChild(IconInstagram());
 
   return $sidebar;
