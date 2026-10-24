@@ -4,7 +4,7 @@ import { IconGitHub } from "./icons/IconGitHub.js";
 import { IconHome } from "./icons/IconHome.js";
 import { IconLinkedIn } from "./icons/IconLinkedIn.js";
 // import { Iconx } from "./icons/IconX.js";
-// import { LogoEmcahell } from "./icons/LogoEmcahell.js";
+// import { LogoEnrollment } from "./icons/LogoEnrollment.js";
 
 export const Sidebar = () => {
 
@@ -59,7 +59,7 @@ export const Sidebar = () => {
   $sidebar.appendChild($footer);
   $footer.appendChild($footerInfo);
   $footerInfo.appendChild($footerTitle);
-  // $footerInfo.appendChild(LogoEmcahell());
+  // $footerInfo.appendChild(LogoEnrollment());
   $footerInfo.appendChild($boxsocialMedia);
   $boxsocialMedia.appendChild(IconGitHub());
   // $boxsocialMedia.appendChild(Iconx());
