@@ -1,0 +1,85 @@
+@import './index.css';
+
+.install-card{
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 90vw;
+  max-width: 480px;
+  padding: 10px 34px 10px 12px;
+  border: 1px solid #93ffae9f;
+  border-radius: 10px;
+  background: linear-gradient(150deg, var(--bg-card) 50%, #d7ffe2);
+  box-shadow: 0 4px 12px rgba(0, 73, 37, 0.25);
+}
+
+.install-card--hidden{
+  display: none;
+}
+
+.install-card__logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.install-card__info{
+  flex: 1;
+}
+
+.install-card__title{
+  font-size: 13px;
+  font-weight: 700;
+  color: #004925;
+}
+
+.install-card__text{
+  margin-top: 2px;
+  font-size: 10px;
+  opacity: .7;
+}
+
+.install-card__button{
+  padding: 6px 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--green-primary);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.install-card__button:hover{
+  background-color: var(--green-secondary);
+}
+
+.install-card__close{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.install-card__close:hover{
+  background-color: #93ffae9f;
+}
+
+.install-card__close img{
+  width: 10px;
+  height: 10px;
+}

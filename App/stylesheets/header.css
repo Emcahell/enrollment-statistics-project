@@ -9,21 +9,20 @@
   margin-top: 5px;
   border-radius: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background: var(--bg-header);
+  justify-content: center;
   z-index: 10;
 }
 
 .icon-menu{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
 .name-app{
-  margin-right: 10px;
   font-size: 20px;
   color: #004925;
 }

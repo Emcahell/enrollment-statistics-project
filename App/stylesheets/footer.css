@@ -1,0 +1,31 @@
+@import './index.css';
+
+.page-footer{
+  box-sizing: border-box;
+  width: 90vw;
+  margin: 20px auto 85px;
+  padding: 10px 15px;
+}
+
+.page-footer__info{
+  width: 90%;
+  margin: auto;
+}
+
+.page-footer__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+
+.page-footer__social{
+  display: flex;
+  margin-top: 7px;
+}
+
+.page-footer__social .icon-brand-github,
+.page-footer__social .icon-brand-instagram{
+  width: 15px;
+  margin-right: 10px;
+}
